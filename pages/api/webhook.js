@@ -9,7 +9,7 @@ export default async function handler(req, res) { if (req.method !== 'POST') { r
   console.log('Pagamento aprovado:', orderId);
 
   // ENVIA PARA GOOGLE SHEETS
-  await fetch('https://script.google.com/macros/s/AKfycbx.../exec', {
+  await fetch('https://script.google.com/macros/s/AKfycbxCSYPnxf6fsZZH1zHAyJncKs4woMOCOVCuioJ0lJdokWaIFLHSvs_d9qmeuNxM_qM6/exec', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
